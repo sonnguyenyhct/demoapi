@@ -1,0 +1,20 @@
+<h2>Delete product</h2>
+<form (ngSubmit)="deleteProduct(id)">
+  <table>
+    <tr>
+      <td>Name :</td>
+      <td>{{product.name}}</td>
+    </tr>
+    <tr>
+      <td>Price :</td>
+      <td>{{product.price}}</td>
+    </tr>
+    <tr>
+      <td>Description :</td>
+      <td>{{product.description}}</td>
+    </tr>
+    <tr>
+      <td><button>Delete</button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,21 @@
+<h1>Create new product</h1>
+<form (ngSubmit)="createProduct()">
+ <table>
+   <tr>
+     <td>Name</td>
+     <td><input type="text" [(ngModel)]="product.name" name="name" placeholder="Nhap ten"></td>
+   </tr>
+   <tr>
+     <td>Price</td>
+     <td><input type="text" [(ngModel)]="product.price" name="price" placeholder="Nhap gia"></td>
+   </tr>
+   <tr>
+     <td>Description:</td>
+     <td><input type="text" name="description" [(ngModel)]="product.description" placeholder="Nhap mo ta"></td>
+   </tr>
+   <tr>
+     <td></td>
+     <td><button>Submit</button></td>
+   </tr>
+ </table>
+</form>
